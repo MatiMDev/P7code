@@ -1,0 +1,12 @@
+DATASET:
+  TRAIN_PATH: "./Plucking.v2i.coco-segmentation/train"
+  VALID_PATH: "./Plucking.v2i.coco-segmentation/valid"
+  TEST_PATH: "./Plucking.v2i.coco-segmentation/test"
+
+SAM:
+  CHECKPOINT: "./sam_vit_b_01ec64.pth"
+  RANK: 2
+
+TRAIN:
+  BATCH_SIZE: 2
+  NUM_EPOCHS: 5
