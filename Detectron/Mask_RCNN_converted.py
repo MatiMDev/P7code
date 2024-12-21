@@ -28,8 +28,8 @@ logger.info(f"Using CUDA version: {torch.version.cuda}")
 logger.info(f"GPU detected: {torch.cuda.get_device_name(0)}")
 
 # Dataset configuration
-DATA_SET_NAME = "datasets/Plucking.v2i.coco-segmentation"
-dataset_location = "datasets/Plucking.v2i.coco-segmentation"
+DATA_SET_NAME = "datasets"
+dataset_location = "datasets"
 ANNOTATIONS_FILE_NAME = "_annotations.coco.json"
 TRAIN_DATA_SET_NAME = f"{DATA_SET_NAME}-train"
 TEST_DATA_SET_NAME = f"{DATA_SET_NAME}-test"
