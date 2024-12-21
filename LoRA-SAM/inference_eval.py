@@ -23,7 +23,7 @@ with open("./config.yaml", "r") as ymlfile:
     config_file = yaml.load(ymlfile, Loader=yaml.Loader)
 
 # Ranks to compare
-rank_list = [2, 4, 6, 8, 16, 32, 64, 128, 256, 512]
+rank_list = [2]
 
 # Directory to save plots
 output_dir = "./plots"

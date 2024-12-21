@@ -1,0 +1,50 @@
+loading annotations into memory...
+Done (t=0.03s)
+creating index...
+index created!
+Evaluating baseline SAM-H...
+Baseline Metrics: {'Mean Dice Loss': 0.15727355240567312, 'Mean IoU': 0.7847461762611527, 'Mean Precision': 0.8721162456556113, 'Mean Recall': 0.8696326303495233, 'Mean F1-Score': 0.8649077007375984}
+Found weights for ranks: [2, 4, 8, 16, 32, 64, 128, 256]
+
+Evaluating LoRA-SAM-H with Rank 2...
+Rank 2 Metrics: {'Mean Dice Loss': 0, 'Mean IoU': 0, 'Mean Precision': 0, 'Mean Recall': 0, 'Mean F1-Score': 0}
+
+Evaluating LoRA-SAM-H with Rank 4...
+Rank 4 Metrics: {'Mean Dice Loss': 0, 'Mean IoU': 0, 'Mean Precision': 0, 'Mean Recall': 0, 'Mean F1-Score': 0}
+
+Evaluating LoRA-SAM-H with Rank 8...
+Rank 8 Metrics: {'Mean Dice Loss': 0, 'Mean IoU': 0, 'Mean Precision': 0, 'Mean Recall': 0, 'Mean F1-Score': 0}
+
+Evaluating LoRA-SAM-H with Rank 16...
+Rank 16 Metrics: {'Mean Dice Loss': 0, 'Mean IoU': 0, 'Mean Precision': 0, 'Mean Recall': 0, 'Mean F1-Score': 0}
+
+Evaluating LoRA-SAM-H with Rank 32...
+Rank 32 Metrics: {'Mean Dice Loss': 0, 'Mean IoU': 0, 'Mean Precision': 0, 'Mean Recall': 0, 'Mean F1-Score': 0}
+
+Evaluating LoRA-SAM-H with Rank 64...
+Rank 64 Metrics: {'Mean Dice Loss': 0, 'Mean IoU': 0, 'Mean Precision': 0, 'Mean Recall': 0, 'Mean F1-Score': 0}
+
+Evaluating LoRA-SAM-H with Rank 128...
+Rank 128 Metrics: {'Mean Dice Loss': 0, 'Mean IoU': 0, 'Mean Precision': 0, 'Mean Recall': 0, 'Mean F1-Score': 0}
+
+Evaluating LoRA-SAM-H with Rank 256...
+Rank 256 Metrics: {'Mean Dice Loss': 0, 'Mean IoU': 0, 'Mean Precision': 0, 'Mean Recall': 0, 'Mean F1-Score': 0}
+Metrics saved to ./output_data/evaluation_results_sam_h_all_ranks.csv
+Plot saved to ./plots/comparison_plot_sam_h_all_ranks.jpg
+
+Summary:
+Baseline IoU: 0.7847
+Best performance: Rank 2 (IoU: 0.0000)
+Improvement: -100.00%
+B with Rank 128...
+Rank 128 Metrics: {'Mean Dice Loss': 0.09761020037773493, 'Mean IoU': 0.8718202726261036, 'Mean Precision': 0.9290035081215854, 'Mean Recall': 0.9142402279528734, 'Mean F1-Score': 0.9187794951029518}
+
+Evaluating LoRA-SAM-B with Rank 256...
+Rank 256 Metrics: {'Mean Dice Loss': 0.09928489682843557, 'Mean IoU': 0.8639496673603315, 'Mean Precision': 0.933479604749073, 'Mean Recall': 0.904658674188572, 'Mean F1-Score': 0.9150382400272453}
+Metrics saved to ./output_data/evaluation_results_sam_b_all_ranks.csv
+Plot saved to ./plots/comparison_plot_sam_b_all_ranks.jpg
+
+Summary:
+Baseline IoU: 0.7817
+Best performance: Rank 128 (IoU: 0.8718)
+Improvement: 11.53%

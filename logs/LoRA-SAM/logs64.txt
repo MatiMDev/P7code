@@ -1,0 +1,33 @@
+Defaulting to user installation because normal site-packages is not writeable
+Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
+Requirement already satisfied: PyYAML in /usr/local/lib/python3.12/dist-packages (6.0.2)
+Defaulting to user installation because normal site-packages is not writeable
+Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
+Collecting git+https://github.com/facebookresearch/segment-anything.git
+  Cloning https://github.com/facebookresearch/segment-anything.git to /var/tmp/pip-req-build-lte8d9ku
+  Resolved https://github.com/facebookresearch/segment-anything.git to commit dca509fe793f601edb92606367a655c15ac00fdf
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Initializing LoRA-SAM...
+Loading datasets...
+loading annotations into memory...
+Done (t=0.01s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+Setting up training...
+Starting training...
+Epoch 1: Train Loss = 0.0861, Val Loss = 0.0656
+Saved best model with validation loss 0.0656 to ./lora_weights/lora_rank64.safetensors
+Epoch 2: Train Loss = 0.0602, Val Loss = 0.0596
+Saved best model with validation loss 0.0596 to ./lora_weights/lora_rank64.safetensors
+Epoch 3: Train Loss = 0.0542, Val Loss = 0.0531
+Saved best model with validation loss 0.0531 to ./lora_weights/lora_rank64.safetensors
+Epoch 4: Train Loss = 0.0420, Val Loss = 0.0578
+Epoch 5: Train Loss = 0.0397, Val Loss = 0.0461
+Saved best model with validation loss 0.0461 to ./lora_weights/lora_rank64.safetensors
+Training completed. Best validation loss: 0.0461
+Final model saved to ./lora_weights/lora_rank64.safetensors
